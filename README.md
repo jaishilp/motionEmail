@@ -1,15 +1,9 @@
 # motionEmail
-This project was a feature used for my senior design project.
+This project was a feature used for my senior design project. <br />
+It may not be supported anymore as gmail drops support for "Less secure apps".
 
-File pir.py will be the one that runs. <br />
-It has raspberry pi GPIO configured set up for an Infrared Motion Sensor.  <br />
+First provide the credentials to your gmail account in info.py <br />
+Make sure the data cable for the PIR motion sensor connected to gpio 4 of the Pi. <br />
+You can choose to have a LED (connected to gpio 17) go off when motion is detected. <br />
+Run pir.py which will wait until the PIR sensor will send a signal. <br />
 It will wait until motion is detected and will run the motionemail.py file. <br />
-
-Create an info.py which will store all the credentials for the motionEmail.py as such:
-
-```
-class info():
-	sender_email = "sender_email@gmail.com"
-	password = "sender_email_password"
-	receiver_email = "receiver_email@gmail.com"
-```
